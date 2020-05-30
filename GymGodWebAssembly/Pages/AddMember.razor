@@ -8,12 +8,44 @@
 
 <h1>Add New Member</h1>
 <form>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" class="form-control" />
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" class="form-control" />
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="street1">Street 1</label>
+        <input type="text" class="form-control" id="street1" />
+    </div>
+    <div class="form-row">
+        <label for="street2">Street 2</label>
+        <input type="text" class="form-control" id="street2" />
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" />
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="state">State</label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="zip">Zip Code</label>
+            <input type="text" class="form-control" id="zip" />
+        </div>
+    </div>
 
-    <label for="fname">First Name</label><br />
-    <input type="text" id="fname" name="fname" class="form-control" /><br />
 
-    <label for="lname">Last Name</label><br />
-    <input type="text" id="lname" name="lname" class="form-control" /><br />
+
 
     <label for="email">Email</label><br />
     <input type="email" class="form-control" id="email" /><br />
@@ -21,23 +53,7 @@
     <label for="birthday">Birthday</label><br />
     <input type="date" class="form-control" id="birthday" /><br />
 
-    <label for="street1">Street 1</label>
-    <input type="text" class="form-control" id="street1" /><br />
 
-    <label for="street2">Street 2</label>
-    <input type="text" class="form-control" id="street2" /><br />
-
-    <label for="city">City</label>
-    <input type="text" class="form-control" id="city" /><br />
-
-    <label for="state">State</label>
-    <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-    </select>
-
-    <label for="zip">Zip Code</label>
-    <input type="text" class="form-control" id="zip" />
 
     <input type="submit" value="Save" class="btn btn-primary" />
 
