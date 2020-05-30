@@ -1,0 +1,55 @@
+﻿@page "/addmember"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<h1>Add New Member</h1>
+<form>
+
+    <label for="fname">First Name</label><br />
+    <input type="text" id="fname" name="fname" class="form-control" /><br />
+
+    <label for="lname">Last Name</label><br />
+    <input type="text" id="lname" name="lname" class="form-control" /><br />
+
+    <label for="email">Email</label><br />
+    <input type="email" class="form-control" id="email" /><br />
+
+    <label for="birthday">Birthday</label><br />
+    <input type="date" class="form-control" id="birthday" /><br />
+
+    <label for="street1">Street 1</label>
+    <input type="text" class="form-control" id="street1" /><br />
+
+    <label for="street2">Street 2</label>
+    <input type="text" class="form-control" id="street2" /><br />
+
+    <label for="city">City</label>
+    <input type="text" class="form-control" id="city" /><br />
+
+    <label for="state">State</label>
+    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+    </select>
+
+    <label for="zip">Zip Code</label>
+    <input type="text" class="form-control" id="zip" />
+
+    <input type="submit" value="Save" class="btn btn-primary" />
+
+
+
+</form>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

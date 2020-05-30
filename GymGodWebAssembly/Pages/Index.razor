@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Welcome to <span class="font-weight-bold">Gym God</span></h1>
+<h3>Today is @CurDate.ToShortDateString()</h3>
+
+<form>
+    <p>Current total members in the gym:</p>
+    <p></p>
+</form>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    DateTime CurDate = new DateTime();
+}
